@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/pngtree-banking-logo-image_63083-removebg-preview.png" type="image/x-icon">
     <title>Sign in & Sign up Form</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -14,8 +15,8 @@
           <div class="forms-wrap">
             <form action="index.html" autocomplete="off" class="sign-in-form">
               <div class="logo">
-                <img src="./img/logo.png" alt="easyclass" />
-                <h4>easyclass</h4>
+                <img src="./images/pngtree-banking-logo-image_63083-removebg-preview.png" alt="Banking" />
+                <h4>Banking</h4>
               </div>
 
               <div class="heading">
@@ -27,19 +28,19 @@
               <div class="actual-form">
                 <div class="input-wrap">
                   <input
-                    type="text"
-                    minlength="4"
+                    type="email"
+                    minlength=""
                     class="input-field"
                     autocomplete="off"
                     required
                   />
-                  <label>Name</label>
+                  <label>Email</label>
                 </div>
 
                 <div class="input-wrap">
                   <input
                     type="password"
-                    minlength="4"
+                    minlength="8"
                     class="input-field"
                     autocomplete="off"
                     required
@@ -58,8 +59,8 @@
 
             <form action="index.html" autocomplete="off" class="sign-up-form">
               <div class="logo">
-                <img src="./img/logo.png" alt="easyclass" />
-                <h4>easyclass</h4>
+                <img src="./images/pngtree-banking-logo-image_63083-removebg-preview.png" alt="Banking" />
+                <h4>Banking</h4>
               </div>
 
               <div class="heading">
@@ -92,6 +93,18 @@
 
                 <div class="input-wrap">
                   <input
+                    type="number"
+                    maxlength="11"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 11)"
+                  />
+                  <label>Phone Number</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
                     type="password"
                     minlength="4"
                     class="input-field"
@@ -114,17 +127,18 @@
 
           <div class="carousel">
             <div class="images-wrapper">
-              <img src="./img/image1.png" class="image img-1 show" alt="" />
-              <img src="./img/image2.png" class="image img-2" alt="" />
-              <img src="./img/image3.png" class="image img-3" alt="" />
+              <img src="./images/Open-bank-account.png" class="image img-1 show" alt="" />
+              <img src="./images/d86bc6b9f8dc5db2b379b4713f82870d.jpg" class="image img-2" alt="" />
+              <img src="./images/360_F_324918993_jRG7vew7aagtUfPGvvAdmyYKOQwtxtOW.jpg" class="image img-3" alt="" />
             </div>
 
             <div class="text-slider">
               <div class="text-wrap">
                 <div class="text-group">
-                  <h2>Create your own courses</h2>
-                  <h2>Customize as you like</h2>
-                  <h2>Invite students to your class</h2>
+                  <h2>Open Your Account Today</h2>
+                  <h2>Secure Your Financial Future</h2>
+                  <h2>Refer Friends and Family to Join</h2>
+
                 </div>
               </div>
 
@@ -141,6 +155,6 @@
 
     <!-- Javascript file -->
 
-    <script src="app.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
